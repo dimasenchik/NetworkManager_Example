@@ -32,10 +32,4 @@ struct TodoResponseElementModel: Codable {
         case userID = "userId"
         case id, title, completed
     }
-    
-    func convertToDomain() -> TodoDomainModel {
-        let domainModel = TodoDomainModel(title: title, isCompleted: completed)
-        return domainModel
-    }
-
 }
